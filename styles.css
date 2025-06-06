@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+form input, form button {
+    margin: 5px;
+    padding: 8px;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {  
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+/* .action-btns button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+} */
