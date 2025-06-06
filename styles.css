@@ -1,27 +1,97 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
     margin: 30px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 form input, form button {
-    margin: 5px;
-    padding: 8px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9;
 }
 
 table {
-    margin-top: 20px;
     width: 100%;
     border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-th, td {  
-    border: 1px solid black;
-    padding: 10px;
+th {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
     text-align: left;
 }
 
-/* .action-btns button {
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eef2f7;
+}
+
+.action-btns button {
     margin-right: 5px;
-    padding: 5px 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
     cursor: pointer;
-} */
+    font-size: 14px;
+}
+
+.action-btns button:first-child {
+    background-color: #f39c12;
+}
+
+.action-btns button:first-child:hover {
+    background-color: #e67e22;
+}
+
+.action-btns button:last-child {
+    background-color: #e74c3c;
+}
+
+.action-btns button:last-child:hover {
+    background-color: #c0392b;
+}
